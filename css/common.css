@@ -1489,7 +1489,7 @@ nav .menu_btn.on span:last-of-type {
 }
 
 .sub_form select {
-  padding: 0.5rem 80% 0.5rem 0;
+  padding: 0.5rem 100% 0.5rem 0;
   border: none;
   outline: none;
   cursor: pointer;
