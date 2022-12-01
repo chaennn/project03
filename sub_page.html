@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>아트허브 서브페이지</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/my_reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/common.css" />
+    <script src="./js/common.js" defer></script>
+  </head>
+  <body>
+    <header class="hd" id="hd">
+      <nav>
+        <div class="search_wrap">
+          <div class="search_btn">
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <h1 class="logo">
+          <a href="/index.html">
+            <img src="./img/new_logo.svg" alt="" />
+          </a>
+        </h1>
+        <div class="gnb_wrap">
+          <div class="menu_btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="search_con">
+      <div class="search">
+        <form>
+          <select name="aselect" id="aselect">
+            <option value="01">전시</option>
+            <option value="02">공모</option>
+            <option value="03">공공미술</option>
+            <option value="04">아트잡</option>
+            <option value="05">지원사업</option>
+            <option value="06">큐레이션</option>
+            <option value="07">홈페이지</option>
+            <option value="08">동영상</option>
+            <option value="09">VR</option>
+            <option value="10">평론</option>
+            <option value="11">레지던시</option>
+            <option value="12">대량메일</option>
+          </select>
+          <input id="input" type="text" placeholder="search" />
+          <input type="submit" class="btn_search" />
+        </form>
+      </div>
+      <div class="word_wrap">
+        <div class="recent_word">
+          <h2>최근검색어</h2>
+          <ul>
+            <li><a href="#">11월 공모전</a><span>22.11.17</span></li>
+            <li><a href="#">대전시립미술관</a><span>22.11.02</span></li>
+            <li><a href="#">신인작가</a><span>22.10.24</span></li>
+          </ul>
+        </div>
+        <div class="popular_word">
+          <h2>추천검색어</h2>
+          <ul>
+            <li><a href="#">11월 공모전</a></li>
+            <li><a href="#">VR 갤러리</a></li>
+            <li><a href="#">백남준</a></li>
+            <li><a href="#">대전시립미술관</a></li>
+            <li><a href="#">아트페어</a></li>
+            <li><a href="#">현대갤러리</a></li>
+            <li><a href="#">신인작가</a></li>
+            <li><a href="#">평론</a></li>
+            <li><a href="#">국제전</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="aside">
+      <div class="menu">
+        <ul class="gnb">
+          <li>
+            <p class="en">archive</p>
+            <p class="kr">아카이브</p>
+            <a href="#">자세히보기</a>
+          </li>
+          <li>
+            <p class="en">contest</p>
+            <p class="kr">공모</p>
+            <a href="#">자세히보기</a>
+          </li>
+          <li>
+            <p class="en">artjob</p>
+            <p class="kr">아트잡</p>
+            <a href="#">자세히보기</a>
+          </li>
+          <li>
+            <p class="en">curation</p>
+            <p class="kr">큐레이션</p>
+            <a href="#">자세히보기</a>
+          </li>
+          <li>
+            <p class="en">residency</p>
+            <p class="kr">레지던스</p>
+            <a href="#">자세히보기</a>
+          </li>
+          <li>
+            <p class="en">support project</p>
+            <p class="kr">지원사업</p>
+            <a href="#">자세히보기</a>
+          </li>
+        </ul>
+        <div class="util">
+          <div class="util_top">
+            <a href="#">my page</a>
+          </div>
+          <div class="util_bottom">
+            <div class="company">
+              <a href="#">아트허브</a>
+              <a href="mailto:arthub2@naver.com">arthub2@naver.com</a>
+              <a tel="tel:02-2654-7138">02 2654 7138</a>
+            </div>
+            <div class="sns_list">
+              <p>Follow us</p>
+              <a href="#">
+                <img src="./img/icon/insta-white.svg" alt="" />
+              </a>
+              <a href="#">
+                <img src="./img/icon/facebook-white.svg" alt="" />
+              </a>
+              <a href="#">
+                <img src="./img/icon/blog-white.svg" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- start -->
+    <div class="wrap">
+      <div class="sub_title" id="sub_title">
+        <p class="en">Archive</p>
+        <p class="kr">아카이브</p>
+      </div>
+      <section class="contents_sec mw">
+        <div class="sub_form">
+          <form>
+            <div class="form_list">
+              <p>State</p>
+              <select name="state" id="state">
+                <option value="01">지난전시</option>
+                <option value="02">현재전시</option>
+                <option value="03">예정전시</option>
+              </select>
+            </div>
+            <div class="form_list">
+              <p>Location</p>
+              <select name="location" od="location">
+                <option value="01">서울</option>
+                <option value="02">인천</option>
+                <option value="03">대전</option>
+                <option value="04">세종</option>
+                <option value="05">광주</option>
+                <option value="06">대구</option>
+                <option value="07">부산</option>
+                <option value="08">울산</option>
+                <option value="09">제주</option>
+                <option value="10">경기도</option>
+                <option value="11">강원도</option>
+                <option value="12">충청도</option>
+                <option value="13">전라도</option>
+                <option value="14">경상도</option>
+              </select>
+            </div>
+            <div class="form_list">
+              <p>Month</p>
+              <select name="month" id="month">
+                <option value="01">1월</option>
+                <option value="02">2월</option>
+                <option value="03">3월</option>
+                <option value="04">4월</option>
+                <option value="05">5월</option>
+                <option value="06">6월</option>
+                <option value="07">7월</option>
+                <option value="08">8월</option>
+                <option value="09">9월</option>
+                <option value="10">10월</option>
+                <option value="11">11월</option>
+                <option value="12">12월</option>
+              </select>
+            </div>
+            <div class="form_list">
+              <p>Exhibition</p>
+              <select name="exhibition" id="exhibition">
+                <option value="01">개인전</option>
+                <option value="02">단체전</option>
+                <option value="03">아트페어</option>
+                <option value="04">공모전</option>
+                <option value="05">비엔날레</option>
+              </select>
+            </div>
+            <div class="form_list list_search">
+              <p>search</p>
+              <input type="submit" value="검색" class="list_btn" />
+            </div>
+          </form>
+        </div>
+        <div class="sort">
+          <p>총 87건</p>
+          <div class="selectbox">
+            <select name="selectbox" id="selectbox">
+              <option value="01">최근등록순</option>
+              <option value="02">날짜순</option>
+            </select>
+          </div>
+        </div>
+        <div class="sub_list_con">
+          <ul class="thumb_list">
+            <li>
+              <div class="thumb">
+                <img src="./img/archive/88946190.jpg" alt="" />
+              </div>
+              <div class="info">
+                <span>Photography</span>
+                <p class="list_title">
+                  보이는 것과 보이지 않는 것 Visible and Invisible
+                </p>
+                <ul>
+                  <li>
+                    <span>아티스트</span>
+                    <p>이종경(Lee Jongkyoung 李鍾京)</p>
+                  </li>
+                  <li>
+                    <span>전시기간</span>
+                    <p>22.11.24 - 22.11.30</p>
+                  </li>
+                  <li>
+                    <span>전시장소</span>
+                    <p>메르헨 갤러리(Marchen Gallery)</p>
+                  </li>
+                </ul>
+              </div>
+              <a href="#">자세히보기</a>
+            </li>
+            <li>
+              <div class="thumb">
+                <img src="./img/archive/84419987.jpg" alt="" />
+              </div>
+              <div class="info">
+                <span>Various</span>
+                <p class="list_title">꼬마꼰대 독고탁, 부활</p>
+                <ul>
+                  <li>
+                    <span>아티스트</span>
+                    <p>이상무(본명 박노철)</p>
+                  </li>
+                  <li>
+                    <span>전시기간</span>
+                    <p>22.11.25 - 23.01.20</p>
+                  </li>
+                  <li>
+                    <span>전시장소</span>
+                    <p>마포아트센터 갤러리맥(Mapo Arts Center Gallery Mac)</p>
+                  </li>
+                </ul>
+              </div>
+              <a href="#">자세히보기</a>
+            </li>
+            <li>
+              <div class="thumb">
+                <img src="./img/archive/72442556.jpg" alt="" />
+              </div>
+              <div class="info">
+                <span>Painting</span>
+                <p class="list_title">THIRD LAYERED</p>
+                <ul>
+                  <li>
+                    <span>아티스트</span>
+                    <p>강달례 외 27명</p>
+                  </li>
+                  <li>
+                    <span>전시기간</span>
+                    <p>2022-11-17 ~ 2022-11-24</p>
+                  </li>
+                  <li>
+                    <span>전시장소</span>
+                    <p>아트컨티뉴(ART CONTINUE)</p>
+                  </li>
+                </ul>
+              </div>
+              <a href="#">자세히보기</a>
+            </li>
+            <li>
+              <div class="thumb">
+                <img src="./img/archive/56894217.jpg" alt="" />
+              </div>
+              <div class="info">
+                <span>Various</span>
+                <p class="list_title">FRAMEWORK</p>
+                <ul>
+                  <li>
+                    <span>아티스트</span>
+                    <p>별도 참여 작가가 없는 기획전</p>
+                  </li>
+                  <li>
+                    <span>전시기간</span>
+                    <p>2022-11-10 ~ 2022-11-30</p>
+                  </li>
+                  <li>
+                    <span>전시장소</span>
+                    <p>온라인 스페이스(Online Space)</p>
+                  </li>
+                </ul>
+              </div>
+              <a href="#">자세히보기</a>
+            </li>
+            <li>
+              <div class="thumb">
+                <img src="./img/archive/43334129.jpg" alt="" />
+              </div>
+              <div class="info">
+                <span>Painting & Video</span>
+                <p class="list_title">Blow-up - 신선우展</p>
+                <ul>
+                  <li>
+                    <span>아티스트</span>
+                    <p>신선우(XIN Sunoo)</p>
+                  </li>
+                  <li>
+                    <span>전시기간</span>
+                    <p>22.11.16 - 22.12.04</p>
+                  </li>
+                  <li>
+                    <span>전시장소</span>
+                    <p>플레이스막1(Placemak1)</p>
+                  </li>
+                </ul>
+              </div>
+              <a href="#">자세히보기</a>
+            </li>
+            <li>
+              <div class="thumb">
+                <img src="./img/archive/36685918.jpg" alt="" />
+              </div>
+              <div class="info">
+                <span>Painting</span>
+                <p class="list_title">관계의 노스탤지어 - 지현展</p>
+                <ul>
+                  <li>
+                    <span>아티스트</span>
+                    <p>지현(Jihyun 智賢)</p>
+                  </li>
+                  <li>
+                    <span>전시기간</span>
+                    <p>22.11.10 - 22.12.18</p>
+                  </li>
+                  <li>
+                    <span>전시장소</span>
+                    <p>소암미술관(Soam Art Museum)</p>
+                  </li>
+                </ul>
+              </div>
+              <a href="#">자세히보기</a>
+            </li>
+            <li>
+              <div class="thumb">
+                <img src="./img/archive/29835191.jpg" alt="" />
+              </div>
+              <div class="info">
+                <span> Painting & Installation</span>
+                <p class="list_title">
+                  트리거; 높고 낮음, 흐름, 깊고 얕음에 대한 연구 Trigger; The
+                  Study of Height, Depth, and Flow - 정진展
+                </p>
+                <ul>
+                  <li>
+                    <span>아티스트</span>
+                    <p>정진(Jung Jean 郑珍)</p>
+                  </li>
+                  <li>
+                    <span>전시기간</span>
+                    <p>2022-11-01 - 2022-11-27</p>
+                  </li>
+                  <li>
+                    <span>전시장소</span>
+                    <p>설미재미술관(Seolmijea Art Muse</p>
+                  </li>
+                </ul>
+              </div>
+              <a href="#">자세히보기</a>
+            </li>
+            <li>
+              <div class="thumb">
+                <img src="./img/archive/27737479.jpg" alt="" />
+              </div>
+              <div class="info">
+                <span>Painting & Collage</span>
+                <p class="list_title">MINDSCAPE III - 이선화展</p>
+                <ul>
+                  <li>
+                    <span>아티스트</span>
+                    <p>이선화(Lee Sunhwa 李善和)</p>
+                  </li>
+                  <li>
+                    <span>전시기간</span>
+                    <p>2022-11-17 ~ 2022-11-23</p>
+                  </li>
+                  <li>
+                    <span>전시장소</span>
+                    <p>메르헨 갤러리(Marchen Gallery)</p>
+                  </li>
+                </ul>
+              </div>
+              <a href="#">자세히보기</a>
+            </li>
+          </ul>
+        </div>
+        <ul class="pagination">
+          <a href="#" class="first arrow">첫페이지</a>
+          <a href="#" class="sub_prev arrow">이전</a>
+          <li class="on"><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li class="m_number"><a href="#">6</a></li>
+          <li class="m_number"><a href="#">7</a></li>
+          <li class="m_number"><a href="#">8</a></li>
+          <li class="m_number"><a href="#">9</a></li>
+          <a href="#" class="sub_next arrow">다음</a>
+          <a href="#" class="last arrow">마지막페이지</a>
+        </ul>
+      </section>
+    </div>
+    <!-- footer -->
+    <footer>
+      <div class="inner mw">
+        <div class="foot_left">
+          <div class="sns">
+            <span>Follow us</span>
+            <a href="#"
+              ><img src="./img/icon/insta-gray.svg" alt="인스타그램"
+            /></a>
+            <a href="#"
+              ><img src="./img/icon/facebook-gray.svg" alt="페이스북"
+            /></a>
+            <a href="#"
+              ><img src="./img/icon/blog-gray.svg" alt="네이버블로그"
+            /></a>
+          </div>
+          <div class="copy">
+            <a href="#">개인정보취급방침</a>
+            <p class="add">예술과아카이브 | 사업자등록번호 : 314-20-75752</p>
+            <a tel="tel:02-2654-7138">T : 02 2654 7138</a>
+            <a href="mailto:arthub2@naver.com">E : arthub2@naver.com</a>
+            <p class="copyright">Copyright ARTHUB. All Rights Reserved</p>
+          </div>
+        </div>
+        <div class="foot_right">
+          <h3>뉴스레터</h3>
+          <form>
+            <input
+              type="text"
+              placeholder="이메일 주소를 입력해주세요"
+              class="email"
+            /><input type="submit" value="구독하기" class="btn_submit" />
+          </form>
+          <p>
+            본 뉴스레터 구독 신청에 따라 자사의 개인정보수집 관련 이용약관에
+            동의한 것으로 간주됩니다.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <div class="float_btn">
+      <a href="#sub_title">
+        <img src="./img/icon/next_gray.svg" alt="" />
+      </a>
+    </div>
+  </body>
+</html>

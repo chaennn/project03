@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>황채은-아트허브</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/my_reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/common.css" />
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/common.js" defer></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="hd" id="hd">
+        <nav>
+          <div class="search_wrap">
+            <div class="search_btn">
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <h1 class="logo">
+            <a href="/index.html">
+              <img src="./img/new_logo.svg" alt="" />
+            </a>
+          </h1>
+          <div class="gnb_wrap">
+            <div class="menu_btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="search_con">
+        <div class="search">
+          <form>
+            <select name="aselect" id="aselect">
+              <option value="01">전시</option>
+              <option value="02">공모</option>
+              <option value="03">공공미술</option>
+              <option value="04">아트잡</option>
+              <option value="05">지원사업</option>
+              <option value="06">큐레이션</option>
+              <option value="07">홈페이지</option>
+              <option value="08">동영상</option>
+              <option value="09">VR</option>
+              <option value="10">평론</option>
+              <option value="11">레지던시</option>
+              <option value="12">대량메일</option>
+            </select>
+              <input id="input" type="text" placeholder="search"/>
+              <input type="submit" class="btn_search" />
+          </form>
+        </div>
+        <div class="word_wrap">
+          <div class="recent_word">
+            <h2>최근검색어</h2>
+            <ul>
+              <li>
+                <a href="#">11월 공모전</a><span>22.11.17</span>
+              </li>
+              <li>
+                <a href="#">대전시립미술관</a><span>22.11.02</span>
+              </li>
+              <li>
+                <a href="#">신인작가</a><span>22.10.24</span>
+              </li>
+            </ul>
+          </div>
+          <div class="popular_word">
+            <h2>추천검색어</h2>
+            <ul>
+              <li><a href="#">11월 공모전</a></li>
+              <li><a href="#">VR 갤러리</a></li>
+              <li><a href="#">백남준</a></li>
+              <li><a href="#">대전시립미술관</a></li>
+              <li><a href="#">아트페어</a></li>
+              <li><a href="#">현대갤러리</a></li>
+              <li><a href="#">신인작가</a></li>
+              <li><a href="#">평론</a></li>
+              <li><a href="#">국제전</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="aside">
+          <div class="menu">
+            <ul class="gnb">
+              <li>
+                <p class="en">archive</p>
+                <p class="kr">아카이브</p>
+                <a href="#">자세히보기</a>
+              </li>
+              <li>
+                <p class="en">contest</p>
+                <p class="kr">공모</p>
+                <a href="#">자세히보기</a>
+              </li>
+              <li>
+                <p class="en">artjob</p>
+                <p class="kr">아트잡</p>
+                <a href="#">자세히보기</a>
+              </li>
+              <li>
+                <p class="en">curation</p>
+                <p class="kr">큐레이션</p>
+                <a href="#">자세히보기</a>
+              </li>
+              <li>
+                <p class="en">residency</p>
+                <p class="kr">레지던스</p>
+                <a href="#">자세히보기</a>
+              </li>
+              <li>
+                <p class="en">support project</p>
+                <p class="kr">지원사업</p>
+                <a href="#">자세히보기</a>
+              </li>
+            </ul>
+          <div class="util">
+            <div class="util_top">
+              <a href="#">my page</a>
+            </div>
+            <div class="util_bottom">
+              <div class="company">
+                <a href="#">아트허브</a>
+                <a href="mailto:arthub2@naver.com">arthub2@naver.com</a>
+                <a tel="tel:02-2654-7138">02 2654 7138</a>
+              </div>
+              <div class="sns_list">
+                <p>Follow us</p>
+                <a href="#">
+                  <img src="./img/icon/insta-white.svg" alt="" />
+                </a>
+                <a href="#">
+                  <img src="./img/icon/facebook-white.svg" alt="" />
+                </a>
+                <a href="#">
+                  <img src="./img/icon/blog-white.svg" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper slide1" id="main_banner">
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide">
+            <a href="#"><img src="./img/banner/banner3.jpg" alt="" /></a>
+          </li>
+          <li class="swiper-slide">
+            <a href="#"><img src="./img/banner/banner2.jpg" alt="" /></a>
+          </li>
+          <li class="swiper-slide">
+            <a href="#"><img src="./img/banner/banner1.jpg" alt="" /></a>
+          </li>
+        </ul>
+        <div class="banner_btn">
+          <div class="swiper-button-next btn1 next1"></div>
+          <div class="swiper-button-prev btn1 prev1"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <!-- 반응형 배너 -->
+      <div class="swiper slide2 M_banner" >
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide">
+            <a href="#"><img src="./img/banner/M_banner3.jpg" alt="" /></a>
+          </li>
+          <li class="swiper-slide">
+            <a href="#"><img src="./img/banner/M-banner2.jpg" alt="" /></a>
+          </li>
+          <li class="swiper-slide">
+            <a href="#"><img src="./img/banner/M-banner1.jpg" alt="" /></a>
+          </li>
+        </ul>
+        <div class="banner_btn">
+          <div class="swiper-button-next btn1 next1"></div>
+          <div class="swiper-button-prev btn1 prev1"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <!-- 공지사항 -->
+      <div class="news_wrap mw">
+        <div class="schedule">
+          <div class="news_title">
+            <p>
+              <span>2022.</span>
+              <strong>11</strong>
+              <span>신규전시</span>
+            </p>
+          </div>
+          <div class="news_list">
+            <ul>
+              <li>
+                <a href="#">
+                  보이는 것과 보이지 않는 것 Visible and Invisible - 이종경展 ::
+                  Photography
+                </a>
+              </li>
+              <li>
+                <a href="#"> 꼬마꼰대 독고탁, 부활 </a>
+              </li>
+              <li>
+                <a href="#">THIRD LAYERED :: Painting</a>
+              </li>
+              <li>
+                <a href="#">FRAMEWORK</a>
+              </li>
+            </ul>
+            <div class="more"><a href="#">view more</a></div>
+          </div>
+        </div>
+        <div class="notice">
+          <p class="noti_title">공지사항</p>
+          <div  class="news_list">
+            <ul>
+              <li>
+                <a href="#">자세히보기</a>
+                <p>아트허브 번역 기능 지원</p>
+                <span>22.05.10</span>
+              </li>
+              <li>
+                <a href="#">자세히보기</a>
+                <p>아트허브 모바일 앱 v2.0 출시</p>
+                <span>20.12.06</span>
+              </li>
+            </ul>
+            <div class="more"><a href="#">view more</a></div>
+          </div>
+        </div>
+      </div>
+      <!-- 아카이브 -->
+      <section class="sec1">
+        <div class="title_wrap mw">
+          <h2>Archive</h2>
+          <p>현재 진행 중인 전시</p>
+          <!-- more 버튼을 누르면 서브페이지로 이동 -->
+          <div class="more"><a href="/sub_page.html">view more</a></div>
+        </div>
+        <div class="list_wrap">
+          <div class="swiper slide3">
+            <ul class="swiper-wrapper arcive_list">
+              <li class="swiper-slide">
+                <div class="list_img">
+                  <img src="./img/archive/88946190.jpg" alt="" />
+                </div>
+                <div class="list_dec">
+                  <p>
+                    보이는 것과 보이지 않는 것 Visible and Invisible - 이종경展 ::
+                    Photography
+                  </p>
+                  <p>이종경(Lee Jongkyoung 李鍾京)</p>
+                  <a href="#">자세히보기</a>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <div class="list_img">
+                  <img src="./img/archive/84419987.jpg" alt="" />
+                </div>
+                <div class="list_dec">
+                  <p>꼬마꼰대 독고탁, 부활</p>
+                  <p>이상무(본명 박노철)</p>
+                  <a href="#">자세히보기</a>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <div class="list_img">
+                  <img src="./img/archive/72442556.jpg" alt="" />
+                </div>
+                <div class="list_dec">
+                  <p>THIRD LAYERED :: Painting</p>
+                  <p>강달례 외 27명</p>
+                  <a href="#">자세히보기</a>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <div class="list_img">
+                  <img src="./img/archive/56894217.jpg" alt="" />
+                </div>
+                <div class="list_dec">
+                  <p>FRAMEWORK</p>
+                  <p>별도 참여 작가가 없는 기획전</p>
+                  <a href="#">자세히보기</a>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <div class="list_img">
+                  <img src="./img/archive/43334129.jpg" alt="" />
+                </div>
+                <div class="list_dec">
+                  <p>Blow-up - 신선우展 :: Painting & Video</p>
+                  <p>신선우(XIN Sunoo)</p>
+                  <a href="#">자세히보기</a>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <div class="list_img">
+                  <img src="./img/archive/36685918.jpg" alt="" />
+                </div>
+                <div class="list_dec">
+                  <p>관계의 노스탤지어 - 지현展 :: Painting</p>
+                  <p>지현(Jihyun 智賢)</p>
+                  <a href="#">자세히보기</a>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <div class="list_img">
+                  <img src="./img/archive/29835191.jpg" alt="" />
+                </div>
+                <div class="list_dec">
+                  <p>
+                    트리거; 높고 낮음, 흐름, 깊고 얕음에 대한 연구 Trigger; The
+                    Study of Height, Depth, and Flow - 정진展 :: Painting &
+                    Installation
+                  </p>
+                  <p>정진(Jung Jean 郑珍)</p>
+                  <a href="#">자세히보기</a>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <div class="list_img">
+                  <img src="./img/archive/27737479.jpg" alt="" />
+                </div>
+                <div class="list_dec">
+                  <p>MINDSCAPE III - 이선화展 :: Painting & Collage</p>
+                  <p>이선화(Lee Sunhwa 李善和)</p>
+                  <a href="#">자세히보기</a>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <div class="list_img">
+                  <img src="./img/archive/20406501.jpg" alt="" />
+                </div>
+                <div class="list_dec">
+                  <p>
+                    EVERYWHERE BUT NOWHERE : 어디에나 있지만 어디에도 없는 -
+                    전미성展 :: Painting
+                  </p>
+                  <p>전미성</p>
+                  <a href="#">자세히보기</a>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <div class="list_img">
+                  <img src="./img/archive/6752821.jpg" alt="" />
+                </div>
+                <div class="list_dec">
+                  <p>
+                    더 먼저, 더 오래_차이와 반복에 대한 단상 - 심명희展 ::
+                    Photography
+                  </p>
+                  <p>심명희(Shim, Myung Hee 沈明姬)</p>
+                  <a href="#">자세히보기</a>
+                </div>
+              </li>
+            </ul>
+            <div class="swiper-scrollbar"></div>
+          </div>
+        </div>
+      </section>
+      <!-- 평론 -->
+      <section class="sec2">
+        <div class="inner mw">
+          <h2>Art Critic</h2>
+          <div class="more"><a href="#">view more</a></div>
+          <ul class="critic_thumb">
+            <li class="on">
+              <div class="b_thumb">
+                <a href="#"><img src="./img/critic/2556628.jpg" alt="" /></a>
+              </div>
+              <div class="s_thumb">
+                <a href="#"
+                  ><img src="./img/critic/Sthumb_2556628.jpg" alt=""
+                /></a>
+              </div>
+              <div class="thumb_dec">
+                <p>
+                  미디어 문법, 응고된 신체를 자각하기 위한 장으로서의 Contrology -
+                  구기정展
+                </p>
+                <p>
+                  <span>문현정</span>
+                  <span>독립큐레이터</span>
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="b_thumb">
+                <a href="#"><img src="./img/critic/6752821.jpg" alt="" /></a>
+              </div>
+              <div class="s_thumb">
+                <a href="#"
+                  ><img src="./img/critic/Sthumb_6752821.jpg" alt=""
+                /></a>
+              </div>
+              <div class="thumb_dec">
+                <p>
+                  이미지 아장스망(Image Agencement) - 심명희展
+                </p>
+                <p>
+                  <span>이정희</span>
+                  <span>사진평론가</span>
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="b_thumb">
+                <a href="#"
+                  ><img src="./img/critic/221121-chm-01.jpg" alt=""
+                /></a>
+              </div>
+              <div class="s_thumb">
+                <a href="#"
+                  ><img src="./img/critic/Sthumb_72293074.jpg" alt=""
+                /></a>
+              </div>
+              <div class="thumb_dec">
+                <p>
+                  데이터 툼 DATA TOMB - 최혜민展
+                </p>
+                <p>
+                  <span>이지혜</span>
+                  <span>전시기획자</span>
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="b_thumb">
+                <a href="#"><img src="./img/critic/84419987.jpg" alt="" /></a>
+              </div>
+              <div class="s_thumb">
+                <a href="#"
+                  ><img src="./img/critic/Sthumb_84419987.jpg" alt=""
+                /></a>
+              </div>
+              <div class="thumb_dec">
+                <p>
+                  &#60;꼬마꼰대 독고탁, 부활&#62; 전 ‘독고탁’ 탄생 50주년 기념전
+                </p>
+                <p>
+                  <span>신명환</span>
+                  <span>큐레이터</span>
+                </p>
+              </div>
+            </li>
+          </ul>
+          <ul class="critic_list">
+            <li class="on">
+              <p class="critic_title">
+                미디어 문법, 응고된 신체를 자각하기 위한 장으로서의 Contrology -
+                구기정展
+              </p>
+              <p>
+                <span>문현정</span>
+                <span>독립큐레이터</span>
+              </p>
+              <a href="#">자세히보기</a>
+            </li>
+            <li>
+              <p class="critic_title">
+                이미지 아장스망(Image Agencement) - 심명희展
+              </p>
+              <p>
+                <span>이정희</span>
+                <span>사진평론가</span>
+              </p>
+              <a href="#">자세히보기</a>
+            </li>
+            <li>
+              <p class="critic_title">데이터 툼 DATA TOMB - 최혜민展</p>
+              <p>
+                <span>이지혜</span>
+                <span>전시기획자</span>
+              </p>
+              <a href="#">자세히보기</a>
+            </li>
+            <li>
+              <p class="critic_title">
+                &#60;꼬마꼰대 독고탁, 부활&#62; 전 ‘독고탁’ 탄생 50주년 기념전
+              </p>
+              <p>
+                신명환
+                <span>큐레이터</span>
+              </p>
+              <a href="#">자세히보기</a>
+            </li>
+          </ul>
+        </div>
+        <!-- 평론 모바일 -->
+        <div class="M_critic mw">
+          <ul>
+            <li>
+              <div class="critic_copy">
+                <p class="critic_title">
+                  미디어 문법, 응고된 신체를 자각하기 위한 장으로서의 Contrology -
+                  구기정展
+                </p>
+                <p>
+                 <span>문현정</span>
+                 <span>독립큐레이터</span>
+                </p>
+              </div>
+              <div class="m_thumb">
+                <img src="./img/critic/Sthumb_2556628.jpg" alt="">
+              </div>
+              <a href="#">자세히보기</a>
+            </li>
+            <li>
+              <div class="critic_copy">
+                <p class="critic_title">이미지 아장스망(Image Agencement) - 심명희展</p>
+                <p>
+                  <span>이정희</span>
+                  <span>사진평론가</span>
+                </p>
+              </div>
+              <div class="m_thumb">
+                <img src="./img/critic/Sthumb_6752821.jpg" alt="">
+              </div>
+              <a href="#">자세히보기</a>
+            </li>
+            <li >
+              <div class="critic_copy">
+                <p class="critic_title">
+                  데이터 툼 DATA TOMB - 최혜민展
+                </p>
+                <p>
+                  <span>이지혜</span>
+                  <span>전시기획자</span>
+                </p>
+              </div>
+              <div class="m_thumb">
+                <img src="./img/critic/Sthumb_72293074.jpg" alt="">
+              </div>
+              <a href="#">자세히보기</a>
+            </li>
+            <li>
+              <div class="critic_copy">
+                <p class="critic_title">
+                  &#60;꼬마꼰대 독고탁, 부활&#62; 전 ‘독고탁’ 탄생 50주년 기념전
+                </p>
+                <p>
+                  신명환
+                  <span>큐레이터</span>
+                </p>
+              </div>
+              <div class="m_thumb">
+                <img src="./img/critic/Sthumb_84419987.jpg" alt="">
+              </div>
+              <a href="#">자세히보기</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- vr배너 -->
+      <section class="sec3">
+        <div class="vr_banner mw">
+          <h2>VR Gallery</h2>
+          <p>Everywhere But Nowhere</p>
+          <a href="#">입장하기</a>
+        </div>
+      </section>
+      <!-- sec4 -->
+      <section class="sec4">
+        <div class="inner mw">
+          <h2>e-book cabinet</h2>
+          <div class="more"><a href="#">view more</a></div>
+        <div class="swiper slide4">
+          <ul class="swiper-wrapper book_list">
+            <li class="swiper-slide">
+              <div>
+                <img src="./img/e-book/book1.jpg" alt="" />
+              </div>
+              <a href="#">자세히보기</a>
+            </li>
+            <li class="swiper-slide">
+              <div>
+                <img src="./img/e-book/book2.jpg" alt="" />
+              </div>
+              <a href="#">자세히보기</a>
+            </li>
+            <li class="swiper-slide">
+              <div>
+                <img src="./img/e-book/book3.jpg" alt="" />
+              </div>
+              <a href="#">자세히보기</a>
+            </li>
+            <li class="swiper-slide">
+              <div>
+                <img src="./img/e-book/book4.jpg" alt="" />
+              </div>
+              <a href="#">자세히보기</a>
+            </li>
+            <li class="swiper-slide">
+              <div>
+                <img src="./img/e-book/book5.jpg" alt="" />
+              </div>
+              <a href="#">자세히보기</a>
+            </li>
+            <li class="swiper-slide">
+              <div>
+                <img src="./img/e-book/book6.jpg" alt="" />
+              </div>
+              <a href="#">자세히보기</a>
+            </li>
+            <li class="swiper-slide">
+              <div>
+                <img src="./img/e-book/book7.jpg" alt="" />
+              </div>
+              <a href="#">자세히보기</a>
+            </li>
+          </ul>
+          <div class="btn2">
+            <div class="swiper-button-next next2"></div>
+            <div class="swiper-button-prev prev2"></div>
+          </div>
+        </div>
+      </div>
+      </section>
+      <!-- sec5 -->
+      <section class="sec5">
+        <div class="inner mw">
+          <h2>Residency</h2>
+          <div class="more"><a href="#">view more</a></div>
+          <ul class="artist_list">
+            <li class="on" data-mp4="./mp4/권민경_the making_of[BetweenDailylifeand Daydreaming], 2022.mp4">
+              <div class="arti_left">
+                <div class="arti_img">
+                  <img src="./img/residency/권민경.jpg" alt="">
+                </div>
+                <div class="arti_dec">
+                  <p>권민경</p>
+                  <p>the making of [Between Daily life and Daydreaming], 2022</p>
+                </div>
+                <a href="#">자세히보기</a>
+              </div>
+              <div class="arti_right">
+                <a href="#">cv</a>
+                <div class="arti_sns">
+                  <a href="#"><i class="fa-solid fa-house"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+              </div>
+            </li>
+            <li data-mp4="./mp4/문수만작가의일상.mp4">
+              <div class="arti_left">
+                <div class="arti_img">
+                  <img src="./img/residency/문수만.jpg" alt="">
+                </div>
+                <div class="arti_dec">
+                  <p>문수만</p>
+                  <p>문수만 작가의 일상</p>
+                </div>
+                <a href="#">자세히보기</a>
+              </div>
+              <div class="arti_right">
+                <a href="#">cv</a>
+                <div class="arti_sns">
+                  <a href="#"><i class="fa-solid fa-house"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+              </div>
+            </li>
+            <li data-mp4="./mp4/육효진.mp4">
+              <div class="arti_left">
+                <div class="arti_img">
+                  <img src="./img/residency/육효진.jpg" alt="">
+                </div>
+                <div class="arti_dec">
+                  <p>육효진</p>
+                  <p>[Making Film #2] District 37°36'46.9"N 126°58'38.3"E</p>
+                </div>
+                <a href="#">자세히보기</a>
+              </div>
+              <div class="arti_right">
+                <a href="#">cv</a>
+                <div class="arti_sns">
+                  <a href="#"><i class="fa-solid fa-house"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+              </div>
+            </li>
+            <li data-mp4="./mp4/권민경_DAY DREAM_lotte_gallery_ilsan.mp4">
+              <div class="arti_left">
+                <div class="arti_img">
+                  <img src="./img/residency/권민경.jpg" alt="">
+                </div>
+                <div class="arti_dec">
+                  <p>권민경</p>
+                  <p>DAY DREAM_lotte gallery ilsan</p>
+                </div>
+                <a href="#">자세히보기</a>
+              </div>
+              <div class="arti_right">
+                <a href="#">cv</a>
+                <div class="arti_sns">
+                  <a href="#"><i class="fa-solid fa-house"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+              </div>
+            </li>
+            <li data-mp4="./mp4/김은혜_Leeds episode_ For_an easy_life_say_yes.mp4">
+              <div class="arti_left">
+                <div class="arti_img">
+                  <img src="./img/residency/김은혜.jpg" alt="">
+                </div>
+                <div class="arti_dec">
+                  <p>김은혜</p>
+                  <p>Leeds episode: For an easy life say yes</p>
+                </div>
+                <a href="#">자세히보기</a>
+              </div>
+              <div class="arti_right">
+                <a href="#">cv</a>
+                <div class="arti_sns">
+                  <a href="#"><i class="fa-solid fa-house"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="player on">
+              <video class="video" controls autoplay muted loop src="./mp4/권민경_the making_of[BetweenDailylifeand Daydreaming], 2022.mp4">
+                <source src="./mp4/권민경_the making_of[BetweenDailylifeand Daydreaming], 2022.mp4" type="video/mp4">
+              </video>
+          </div>
+        </div>
+      </section>
+      <!-- footer -->
+      <footer>
+        <div class="inner mw">
+          <div class="foot_left">
+            <div class="sns">
+              <span>Follow us</span>
+              <a href="#"><img src="./img/icon/insta-gray.svg" alt="인스타그램"></a>
+              <a href="#"><img src="./img/icon/facebook-gray.svg" alt="페이스북"></a>
+              <a href="#"><img src="./img/icon/blog-gray.svg" alt="네이버블로그"></a>
+            </div>
+            <div class="copy">
+              <a href="#">개인정보취급방침</a>
+              <p class="add">
+                예술과아카이브 | 사업자등록번호 : 314-20-75752
+              </p>
+              <a tel="tel:02-2654-7138">T : 02 2654 7138</a>
+              <a href="mailto:arthub2@naver.com">E : arthub2@naver.com</a>
+              <p class="copyright">
+                Copyright ARTHUB. All Rights Reserved
+              </p>
+            </div>
+          </div>
+          <div class="foot_right">
+            <h3>뉴스레터</h3>
+            <form>
+                <input type="text" placeholder="이메일 주소를 입력해주세요" class="email"/><input type="submit" value="구독하기" class="btn_submit" />
+            </form>
+            <p>본 뉴스레터 구독 신청에 따라 자사의 개인정보수집 관련 이용약관에 동의한 것으로 간주됩니다.</p>
+          </div>
+        </div>
+      </footer>
+        <div class="float_btn">
+          <a href="#main_banner">
+            <img src="./img/icon/next_gray.svg" alt="" />
+          </a>
+        </div>
+    </div>
+  </div>
+  </body>
+</html>
