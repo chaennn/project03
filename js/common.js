@@ -62,16 +62,17 @@ function thumbImg(num) {
 //sec5 탭메뉴
 const $thumb = document.querySelectorAll(".artist_list > li"),
   $player = document.querySelector(".player"),
-  $video = document.querySelector(".player > video");
+  $video = document.querySelector(".player > video"),
+  $dec = document.querySelector(".player > .m_dec");
 
 for (let i = 0; i < $thumb.length; i++) {}
 $thumb.forEach(function (a_list, idx) {
-  a_list.addEventListener("click", function () {
+  a_list.addEventListener("click", function (e) {
     e.preventDefault();
     let mp4 = this.getAttribute("data-mp4");
-    $player.classList.remove("on");
+
+    $player.classList.toggle("on");
     $video.setAttribute("src", mp4);
-    $player.classList.add("on");
     artist(idx);
   });
 });
