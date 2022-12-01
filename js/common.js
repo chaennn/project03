@@ -63,13 +63,22 @@ function thumbImg(num) {
 const $thumb = document.querySelectorAll(".artist_list > li"),
   $player = document.querySelector(".player"),
   $video = document.querySelector(".player > video"),
-  $dec = document.querySelector(".player > .m_dec");
+  $videoDec = document.querySelector(".player.on > .dec");
+
+let dec = document.querySelector(
+  ".artist_list>li.on .arti_dec > .dec_text"
+).innerHTML;
+
+// 강사추가
+$videoDec.innerHTML = dec;
 
 for (let i = 0; i < $thumb.length; i++) {}
 $thumb.forEach(function (a_list, idx) {
   a_list.addEventListener("click", function (e) {
     e.preventDefault();
     let mp4 = this.getAttribute("data-mp4");
+    dec = this.querySelector(".arti_dec > .dec_text").innerHTML;
+    $videoDec.innerHTML = dec;
 
     $player.classList.toggle("on");
     $video.setAttribute("src", mp4);

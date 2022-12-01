@@ -448,7 +448,6 @@ nav .menu_btn.on span:last-of-type {
   position: fixed;
   top: 60px;
   z-index: 10;
-  position: relative;
 }
 
 .aside.on::before {
@@ -1332,6 +1331,7 @@ nav .menu_btn.on span:last-of-type {
 
 .sec5 .artist_list .arti_dec {
   max-width: 350px;
+  width: 70%;
   margin-left: 5%;
 }
 
@@ -1350,13 +1350,16 @@ nav .menu_btn.on span:last-of-type {
   bottom: 0;
 }
 
-.artist_list li.on,
+.artist_list li.on p:first-of-type,
 .artist_list .arti_left:hover p:first-of-type {
   color: var(--point-c1);
   font-weight: bold;
 }
 
-.artist_list .arti_left:hover p:last-of-type {
+.artist_list li.on .dec_text,
+.artist_list .arti_left:hover .dec_text {
+  color: var(--font-c1);
+  font-weight: normal;
   text-decoration-line: underline;
 }
 
@@ -1386,6 +1389,10 @@ nav .menu_btn.on span:last-of-type {
 .sec5 .player {
   order: 1;
   width: 40%;
+}
+
+.sec5 .player > div {
+  display: none;
 }
 
 .sec5 .player .video {
@@ -1486,6 +1493,9 @@ nav .menu_btn.on span:last-of-type {
   border: none;
   outline: none;
   cursor: pointer;
+  appearance: none;
+  background: url(../img/icon/down.svg) no-repeat 100% 45%;
+  background-size: contain;
 }
 
 .list_search {
@@ -1540,9 +1550,15 @@ nav .menu_btn.on span:last-of-type {
 }
 
 #selectbox {
+  padding: 0.4rem;
   border: none;
   outline: none;
   background-color: transparent;
+  appearance: none;
+}
+
+#select:focus {
+  background-color: #eaeaea;
 }
 
 .sub_list_con {
@@ -2290,11 +2306,14 @@ footer .btn_submit {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
   }
 
-  .sec5 .m_dec {
-    display: block;
-    border: 1px solid red;
+  .sec5 .player > div {
+    width: 100%;
     padding: 1rem 0;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .sec5 .player {
@@ -2353,39 +2372,22 @@ footer .btn_submit {
   }
 
   .sub_form select {
-    padding: 0 10% 0 0;
-  }
-
-  .select-selected {
-    background-color: DodgerBlue;
-  }
-
-  .select-selected:after {
-    position: absolute;
-    content: "";
-    top: 14px;
-    right: 10px;
-    width: 0;
-    height: 0;
-    border: 6px solid transparent;
-    border-color: #fff transparent transparent transparent;
-  }
-
-  .select-selected.select-arrow-active:after {
-    border-color: transparent transparent #fff transparent;
-    top: 7px;
+    padding: 0 15% 0 0;
+    appearance: none;
+    background: url(../img/icon/down2.svg) no-repeat 100% 45%;
+    background-size: contain;
   }
 
   .form_list:first-of-type select {
-    padding-right: 7%;
-  }
-
-  .form_list:nth-of-type(3) select {
     padding-right: 12%;
   }
 
+  .form_list:nth-of-type(3) select {
+    padding-right: 17%;
+  }
+
   .form_list:nth-of-type(4) select {
-    padding-right: 6%;
+    padding-right: 12%;
   }
 
   .form_list::before {
@@ -2399,7 +2401,7 @@ footer .btn_submit {
 
   .list_search .list_btn {
     width: 100%;
-    padding: 1rem;
+    padding: 1rem 2.5rem 1rem 1rem;
     margin: auto;
     margin-top: 0;
   }
@@ -2412,13 +2414,13 @@ footer .btn_submit {
     background-size: cover;
     position: absolute;
     top: 40%;
-    right: 35%;
+    right: 40%;
     transition: 0.5s;
     cursor: pointer;
   }
 
   .list_search:hover::after {
-    right: 25%;
+    right: 35%;
   }
 
   .thumb_list > li {
