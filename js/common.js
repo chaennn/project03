@@ -68,8 +68,6 @@ const $thumb = document.querySelectorAll(".artist_list > li"),
 let dec = document.querySelector(
   ".artist_list>li.on .arti_dec > .dec_text"
 ).innerHTML;
-
-// 강사추가
 $videoDec.innerHTML = dec;
 
 for (let i = 0; i < $thumb.length; i++) {}

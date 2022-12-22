@@ -7,7 +7,7 @@
   --point-c2: #000;
   --font-c1: #333;
   --font-c2: #888;
-  --mw: 1586px;
+  --mw: 1600px;
   --font-h2: 50px;
   --font-h3: 36px;
 }
@@ -37,7 +37,7 @@ body {
 }
 
 .wrap {
-  /* overflow-x: hidden; */
+  overflow: hidden;
 }
 
 .scollLock {
@@ -2222,7 +2222,7 @@ footer .btn_submit {
 
   .sec4 .book_list li {
     width: 200px !important;
-    padding-top: 68%;
+    padding-top: 66%;
   }
 
   .sec4 .btn2 {
@@ -2491,7 +2491,7 @@ footer .btn_submit {
   }
 
   footer .email {
-    width: 70%;
+    width: 60%;
   }
 
   footer .btn_submit {
