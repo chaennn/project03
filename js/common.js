@@ -33,117 +33,19 @@ $btnHam.addEventListener("click", function () {
   this.classList.toggle("on");
 });
 
-//sec2 탭메뉴
-const $tabBtn = document.querySelectorAll(".critic_list > li");
-const $tabCon = document.querySelectorAll(".critic_thumb > li");
-
-$tabBtn.forEach(function (item, idx) {
-  item.addEventListener("click", function (e) {
-    e.preventDefault();
-    tabMenu(idx);
-    thumbImg(idx);
-  });
-});
-
-function tabMenu(num) {
-  $tabBtn.forEach(function (tabCon, i) {
-    tabCon.classList.remove("on");
-  });
-  $tabBtn[num].classList.add("on");
-}
-
-function thumbImg(num) {
-  $tabCon.forEach(function (img, i) {
-    img.classList.remove("on");
-  });
-  $tabCon[num].classList.add("on");
-}
-
-//sec5 탭메뉴
-const $thumb = document.querySelectorAll(".artist_list > li"),
-  $player = document.querySelector(".player"),
-  $video = document.querySelector(".player > video"),
-  $videoDec = document.querySelector(".player.on > .dec");
-
-let dec = document.querySelector(
-  ".artist_list>li.on .arti_dec > .dec_text"
-).innerHTML;
-$videoDec.innerHTML = dec;
-
-for (let i = 0; i < $thumb.length; i++) {}
-$thumb.forEach(function (a_list, idx) {
-  a_list.addEventListener("click", function (e) {
-    e.preventDefault();
-    let mp4 = this.getAttribute("data-mp4");
-    dec = this.querySelector(".arti_dec > .dec_text").innerHTML;
-    $videoDec.innerHTML = dec;
-
-    $player.classList.toggle("on");
-    $video.setAttribute("src", mp4);
-    artist(idx);
-  });
-});
-
-function artist(num1) {
-  $thumb.forEach(function (img, i) {
-    img.classList.remove("on");
-  });
-  $thumb[num1].classList.add("on");
-}
-
-/////////////////////////////////////swiper
-//banner slide
-var swiper = new Swiper(".slide1", {
-  pagination: {
-    el: ".swiper-pagination",
-    type: "fraction",
-  },
-  navigation: {
-    nextEl: ".next1",
-    prevEl: ".prev1",
-  },
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
-});
-
-var swiper = new Swiper(".slide2", {
-  pagination: {
-    el: ".swiper-pagination",
-    type: "fraction",
-  },
-  navigation: {
-    nextEl: ".next1",
-    prevEl: ".prev1",
-  },
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
-});
-
-//sec1 slide
-var swiper = new Swiper(".slide3", {
-  slidesPerView: 5,
-  spaceBetween: 30,
-  scrollbar: {
-    el: ".swiper-scrollbar",
-    hide: true,
-  },
-});
-
-//sec4 slide
-var swiper = new Swiper(".slide4", {
-  slidesPerView: 3,
-  spaceBetween: 60,
-  navigation: {
-    nextEl: ".next2",
-    prevEl: ".prev2",
-  },
-  loop: true,
-  autoplay: {
-    delay: 1000,
-    disableOnInteraction: false,
-  },
-});
+console.log(
+  `
+  :::    :::  ::::::::::  :::         :::          ::::::::  
+  :+:    :+:  :+:         :+:         :+:         :+:    :+: 
+  +:+    +:+  +:+         +:+         +:+         +:+    +:+ 
+  +#++:++#++  +#++:++#    +#+         +#+         +#+    +:+ 
+  +#+    +#+  +#+         +#+         +#+         +#+    +#+ 
+  #+#    #+#  #+#         #+#         #+#         #+#    #+# 
+  ###    ###  ##########  ##########  ##########   ########                                             
+`
+);
+console.log("https://github.com/chaennn");
+console.log(
+  `%c카카오톡 ID입니다. 용건이 있으시면 연락주세요:) chaen_hhh`,
+  `color:white`
+);
